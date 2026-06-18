@@ -3,7 +3,7 @@
 - PHP 8.1+
 - Database: (mysql or sqlite)
 - Laravel 13 [requiments](https://laravel.com/docs/13.x/deployment)
-- No UI, only API
+- No UI, only API (no authentification)
 - Postman API collection [here](lp-app.postman_collection.json)
 - PHP PCOV or xdebug to run tests coverage
 
@@ -116,4 +116,4 @@
 - used PHPUnit
 - Included coverage report in `./build` folder (generated with PCOV)
 - To run tests use command: `php artisan test`
-- To build coverage report: `php artisan test --coverage` requires **PHP PCOV or xdebug**
+- To build coverage report: `php artisan test --coverage-html build` requires **PHP PCOV or xdebug**
