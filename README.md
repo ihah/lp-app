@@ -37,6 +37,11 @@
     - 5 warehouses
     - 25 products with random stock (between 10 and 100) in each warehouse;
 
+## Notes
+
+- Re-balance happens in the queue job, to keep it simple use `sync` driver (already set in `.env.example`)
+    - To run queue with worker update `.env` to `QUEUE_CONNECTION=database` (database driver) and start worker in terminal with `php artisan queue:work`
+
 # API
 
 ### Create order (reserve stock) `/api/orders`
