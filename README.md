@@ -39,6 +39,7 @@
 
 ## Notes
 
+- If you are not using Valet, Nginx, or Apache, you can start the application using `php artisan serve`. This will start the application on localhost.
 - Re-balance happens in the queue job, to keep it simple use `sync` driver (already set in `.env.example`)
     - To run queue with worker update `.env` to `QUEUE_CONNECTION=database` (database driver) and start worker in terminal with `php artisan queue:work`
 
